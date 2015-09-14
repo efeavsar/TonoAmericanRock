@@ -1,0 +1,22 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:drawable="@drawable/eq_01" android:duration="200" />
+    <item android:drawable="@drawable/eq_02" android:duration="200" />
+    <item android:drawable="@drawable/eq_03" android:duration="200" />
+    <item android:drawable="@drawable/eq_04" android:duration="200" />
+    <item android:drawable="@drawable/eq_05" android:duration="200" />
+    <item android:drawable="@drawable/eq_06" android:duration="200" />
+    <item android:drawable="@drawable/eq_07" android:duration="200" />
+    <item android:drawable="@drawable/eq_08" android:duration="200" />
+    <item android:drawable="@drawable/eq_09" android:duration="200" />
+    <item android:drawable="@drawable/eq_10" android:duration="200" />
+    <item android:drawable="@drawable/eq_11" android:duration="200" />
+    <item android:drawable="@drawable/eq_12" android:duration="200" />
+    <item android:drawable="@drawable/eq_13" android:duration="200" />
+    <item android:drawable="@drawable/eq_14" android:duration="200" />
+    <item android:drawable="@drawable/eq_15" android:duration="200" />
+    <item android:drawable="@drawable/eq_16" android:duration="200" />
+    <item android:drawable="@drawable/eq_17" android:duration="200" />
+    <item android:drawable="@drawable/eq_18" android:duration="200" />
+    <item android:drawable="@drawable/eq_19" android:duration="200" />
+</animation-list>

@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item android:id="@+id/menu_item_main"
+        android:title="test"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_action_navigation_more_vert"
+        >
+        <menu><item android:id="@+id/menu_item_sleeper"
+            android:title="Set Timer"
+            android:icon="@drawable/ic_action_action_alarm"
+            />
+            <item android:id="@+id/menu_item_rate"
+                android:title="Rate Tono"
+                android:icon="@drawable/ic_action_toggle_star_half"
+                />
+            <item android:id="@+id/menu_item_share"
+                android:title="Share Tono"
+                android:icon="@drawable/ic_action_social_share"/>
+            <item android:id="@+id/menu_item_plus"
+                android:title="Like it!"
+                android:icon="@drawable/ic_action_social_plus_one"/>
+        </menu>
+    </item>
+
+</menu>

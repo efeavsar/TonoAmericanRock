@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:fadingEdge="vertical"
+    local:theme="@style/toolbarTheme"
+    local:popupTheme="@style/menuTheme"
+    android:paddingRight="@dimen/abc_action_bar_default_padding_material"
+    android:paddingTop="@dimen/abc_action_bar_default_padding_material"
+    android:paddingLeft="@dimen/abc_action_bar_default_padding_material"
+    android:paddingBottom="@dimen/abc_action_bar_default_padding_material">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView_power"
+                android:background="@drawable/ic_action_action_settings_power"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:id="@+id/action_bar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="15sp"
+                android:textColor="@color/common_action_bar_splitter"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView_power"
+                android:layout_toEndOf="@+id/imageView_power"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="#ffc107"
+                android:id="@+id/text_view_song_name"
+                android:gravity="center"
+                android:layout_below="@+id/action_bar_title"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/imageView_power"
+                android:layout_toEndOf="@+id/imageView_power"
+                android:layout_marginLeft="8dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>

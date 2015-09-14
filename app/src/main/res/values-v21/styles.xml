@@ -1,0 +1,27 @@
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+            <item name="android:windowContentTransitions">true</item>
+            <item name="android:windowAllowEnterTransitionOverlap">true</item>
+            <item name="android:windowAllowReturnTransitionOverlap">true</item>
+            <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+            <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#1d1d1d</item>
+        <item name="android:windowBackground">@drawable/lonict_splash_screen</item>
+    </style>
+
+
+    <style name="menuTheme" parent="ThemeOverlay.AppCompat">
+        <item name="background">?attr/colorPrimary</item>
+        <item name="android:textColor">@color/primary_text_default_material_dark</item>
+    </style>
+
+    <style name="toolbarTheme" parent="ThemeOverlay.AppCompat">
+    </style>
+
+</resources>

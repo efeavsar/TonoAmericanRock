@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/round">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/relative_dialog_1"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Turn off the radio"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/radioGroup"
+            android:layout_below="@+id/textView">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 minutes"
+                android:id="@+id/radioButton_15"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 minutes"
+                android:id="@+id/radioButton_30"
+                android:checked="false"
+                android:layout_below="@+id/radioButton_15"
+                android:layout_alignLeft="@+id/radioButton_15" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 minutes"
+                android:id="@+id/radioButton_45"
+                android:layout_below="@+id/radioButton_30"
+                android:layout_alignLeft="@+id/radioButton_30" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 hour"
+                android:id="@+id/radioButton_60"
+                android:layout_below="@+id/radioButton_45"
+                android:layout_alignLeft="@+id/radioButton_45" />
+
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/relative_dialog_2"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Sleep"
+            android:id="@+id/cancel_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:textSize="11dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Time"
+            android:id="@+id/sleep_button"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/cancel_button"
+            android:textSize="11dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Got It!"
+            android:id="@+id/close_button"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:textSize="11dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
